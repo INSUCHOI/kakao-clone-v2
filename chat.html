@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat | Kakao Clone</title>
     <script src="https://kit.fontawesome.com/707f65660d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body>
+<body class="chats-body">
     <div class="status-bar">
         <div class="status-bar__column">
             <span class="status-bar__clock">13:54</span>
@@ -21,64 +22,86 @@
             <i class="fas fa-battery-full"></i>
         </div>
     </div>
-    <header class="more__header">
-        <div class="header__header-column">
-            <a href="more.html" class="header__back-btn">
-                <i class="fas fa-arrow-left fa-2x"></i>
-            </a>
-            <h1 class="header_title">Best Firend</h1>
-        </div>
-        <div class="header__header-column">
-            <span class="header__icon">
-                <i class="fas fa-search"></i>
-            </span>
-            <div class="header__icon">
-                <i class="fas fa-bars"></i>
+    <header class="header chat__header">
+            <div class="header__header-column">
+                <a href="index.html" class="header__back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <h1 class="header__title">Hani</h1>
             </div>
-        </div>
+            <div class="header__header-column">
+                <span class="header__icon">
+                    <i class="fas fa-search"></i>
+                </span>
+                <span class="header__icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
         <ul class="chat_messages">
             <span class="chat__timestamp">
-                화요일, 12월 2일 2014년
+                2014년 12월 2일 화요일
             </span>
             <li class="incoming-message message">
-                <img src="images/hani.png" class="g-avata">
+                <img src="images/hani.png" class="message__avatar">
                 <div class="message__content">
+                    <span class="message__bubble">
+                        안뇽! 만나서 반가워 ㅁㄴㅇㄻㄴㄹㅇㄴㅁㅇㄹㄴㄴㅇㄻㅇㄴㄹ
+                    </span>
                     <span class="message__author">Hani</span>
-                    <div class="message bubble">
-                        하이!
-                    </div>
                 </div>
-                <span class="message__timestamp"></span>
+            </li>
+            <li class="sent-message message">
+                <div class="message__content">
+                    <span class="message__bubble">
+                        안녕! 나두 만나서 반가워!ㅁㅇㄴㄻㄹㅇㄴㅁㅇㄹㄴㅁㄴㅇㄹㄴㅇㄻㄴㅇㄻㅇㄹㄴㅁㄴㅇㄹ
+                    </span>
+                </div>
+            </li>
+            <li class="sent-message message">
+                <div class="message__content">
+                    <span class="message__bubble">
+                        안녕! 나두 만나서 반가워!ㅁㅇㄴㄻㄹㅇㄴㅁㅇㄹㄴㅁㄴㅇㄹㄴㅇㄻㄴㅇㄻㅇㄹㄴㅁㄴㅇㄹ
+                    </span>
+                </div>
             </li>
             <li class="incoming-message message">
-                <span class="message__timestamp">
-
-                </span>
+                <img src="images/hani.png" class="message__avatar">
                 <div class="message__content">
-                    <div class="message bubble">
-                        하이!
-                    </div>
+                    <span class="message__bubble">
+                        안뇽! 만나서 반가워 ㅁㄴㅇㄻㄴㄹㅇㄴㅁㅇㄹㄴㄴㅇㄻㅇㄴㄹ
+                    </span>
+                    <span class="message__author">Hani</span>
+                </div>
+            </li>
+            <li class="incoming-message message">
+                <img src="images/hani.png" class="message__avatar">
+                <div class="message__content">
+                    <span class="message__bubble">
+                        안뇽! 만나서 반가워 ㅁㄴㅇㄻㄴㄹㅇㄴㅁㅇㄹㄴㄴㅇㄻㅇㄴㄹ
+                    </span>
+                    <span class="message__author">Hani</span>
                 </div>
             </li>
         </ul>
     </main>
-    <div class="chat__write">
-        <div class="chat__write-column">
-            <i class="far fa-plus-square"></i>
-        </div>
-        <div class="chat__write-column">
-            <input type="text" placeholder="Send message" class="chat__write-input"/>
-        </div>
-        <div class="chat__write-column">
-            <span class="chat__write-icon">
+    <div class="chat__write-container">
+        <input type="text" placeholder="Send message" class="chat__write"/>
+            <span class="chat__write-icon-left chat__write-icon">
+                <i class="far fa-plus-square"></i>
+            </span>
+            <span class="chat__write-icon-right chat__write-icon">
                 <i class="far fa-smile-wink"></i>
             </span>
-            <span class="chat__write-icon">
+            <span class="chat__write-icon-right-2 chat__write-icon">
                 <i class="fas fa-microphone"></i>
             </span>
-        </div>
+    </div>
+    <div class="bigScreen">
+        <span class="bigScreen__text">
+            화면을 줄여주세요!
+        </span>
     </div>
 </body>
 
